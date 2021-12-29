@@ -1,0 +1,14 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        ".devcontainer/data": true,
+        "app/var/**": true,
+        "app/node_modules/**": true,
+        "src/assets/js/**/index.ts.bak": true
+    },
+	"php-cs-fixer.config": ".php_cs.php;.php_cs.dist.php"
+}

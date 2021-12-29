@@ -1,0 +1,44 @@
+html,
+body,
+#root {
+	height: 100%;
+	width: 100%;
+}
+body {
+	background-image: url("../img/background.jpg") !important;
+	background-size: cover !important;
+}
+
+.calculator-page {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.calculator {
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 0.8);
+	border: 1px solid rgba(255, 255, 255, 0.9);
+	max-width: 90%;
+	width: 400px;
+	label {
+		text-align: center;
+	}
+	input {
+		text-align: center;
+		border-radius: 20px;
+		background: white;
+		font-size: 2em;
+		margin-bottom: 10px;
+	}
+	.result {
+		font-size: 1.2em;
+		text-align: center;
+		.sum {
+			font-size: 1.4em;
+			font-weight: bold;
+			display: block;
+		}
+	}
+}

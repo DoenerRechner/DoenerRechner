@@ -1,0 +1,17 @@
+{
+	"name": "Streamplan",
+	"dockerComposeFile": ["docker-compose.yml"],
+	"service": "app",
+	"workspaceFolder": "/workspace",
+	"remoteUser": "www-data",
+	"updateRemoteUserUID": false,
+	"extensions": [
+		"sibiraj-s.vscode-scss-formatter",
+		"esbenp.prettier-vscode",
+		"bmewburn.vscode-intelephense-client",
+		"phproberto.vscode-php-getters-setters",
+		"felixfbecker.php-debug",
+		"junstyle.php-cs-fixer"
+		// "yzhang.markdown-all-in-one",
+	]
+}

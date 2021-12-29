@@ -1,0 +1,29 @@
+# Use root/example as user/password credentials
+version: "3.8"
+
+services:
+  db:
+    image: mysql
+    env_file: ../.env
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+
+  app:
+    image: fluxter/web-php:v1.0-php8.0-dev-latest
+    env_file: ../.env
+    ports:
+      - 9200:8080
+      - 9202:9202
+    volumes:
+      - ..:/workspace
+    environment:
+      - APP_ROOT=/workspace/src
+    depends_on:
+      - db
+
+  pma:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 9201:80
+    environment:
+      - UPLOAD_LIMIT=2G

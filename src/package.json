@@ -1,0 +1,38 @@
+{
+    "devDependencies": {
+        "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
+        "@symfony/webpack-encore": "^1.0.0",
+        "@types/node": "^16.7.2",
+        "@types/react": "^17.0.19",
+        "@types/react-dom": "^17.0.9",
+        "@types/webpack": "^5.28.0",
+        "@types/webpack-dev-server": "^4.0.3",
+        "core-js": "^3.0.0",
+        "react-refresh": "^0.10.0",
+        "regenerator-runtime": "^0.13.2",
+        "sass": "^1.38.1",
+        "ts-node": "^10.2.1",
+        "type-fest": "^2.1.0",
+        "webpack-notifier": "^1.6.0"
+    },
+    "license": "UNLICENSED",
+    "private": true,
+    "scripts": {
+        "dev-server": "cti ./assets/js && yarn encore dev-server",
+        "build": "encore production --progress",
+        "api": "graphql-codegen",
+        "cti": "cti ./assets/js"
+    },
+    "dependencies": {
+        "@babel/preset-react": "^7.14.5",
+        "@chakra-ui/react": "^1.6.7",
+        "@emotion/react": "^11",
+        "@emotion/styled": "^11",
+        "framer-motion": "^4",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "sass-loader": "^12.1.0",
+        "ts-loader": "^9.2.5",
+        "typescript": "^4.3.5"
+    }
+}
